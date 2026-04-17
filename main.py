@@ -291,7 +291,7 @@ parser = Lark(
     parser="lalr"
 )
 
-program = open("program.txt").read()
+program = 'print("Hello, world!")'
 tree = parser.parse(program)
 
 interpreter = ToMyLang()
